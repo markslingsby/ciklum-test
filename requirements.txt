@@ -1,0 +1,5 @@
+django
+flower
+celery[redis]
+south
+beautifulsoup4
