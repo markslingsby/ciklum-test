@@ -76,11 +76,14 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
-webpage_list = ('http://lacoon.com', 'http://python.org')
+webpage_list = ('http://lacoon.com', 'http://python.org', 'http://thepiratebay.se/search/nba/0/99/0')
+BROKER_URL = 'redis://'
+CELERY_RESULT_BACKEND = 'redis://'
+TEST_RUNNER = 'djcelery.contrib.test_runner.CeleryTestSuiteRunner'

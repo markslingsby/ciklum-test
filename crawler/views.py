@@ -6,7 +6,6 @@ from crawler.models import WebPage
 
 def crawl(webpage_list):
     for url in webpage_list:
-        print ">>> url", url
         wp, _ = WebPage.objects.get_or_create(url=url)
 
         wp.body = urllib2.urlopen(url).read()
