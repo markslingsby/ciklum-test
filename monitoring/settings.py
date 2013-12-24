@@ -36,7 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'kombu.transport.django',
+    'kombu.transport.django',
     'crawler',
     'south',
 )
@@ -84,6 +84,5 @@ USE_TZ = False
 
 STATIC_URL = '/static/'
 webpage_list = ('http://lacoon.com', 'http://python.org', 'http://thepiratebay.se/search/nba/0/99/0')
-BROKER_URL = 'redis://'
-CELERY_RESULT_BACKEND = 'redis://'
+BROKER_URL = 'django://'
 TEST_RUNNER = 'djcelery.contrib.test_runner.CeleryTestSuiteRunner'

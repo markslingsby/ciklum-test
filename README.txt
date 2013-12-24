@@ -1,3 +1,33 @@
+Installation
+============
+$ mkvirtualenv lacoon
+$ pip install -r requirements.txt
+$ python manage.py syncdb
+$ python manage.py migrate
+$ python manage.py runserver
+
+run celery worker thread in separate window(python backend, no redis needed)
+$ workon lacoon
+$ python monitoring/celeryapp.py worker
+
+
+
+Management commands
+===================
+$ python manage.py crawl - asynchronously get pages from urls, defined in settings.py
+$ python manage.py tag_words - asynchronously tag pages with tags
+$ python manage.py tag_banners - asynchronously tag pages with 3 and more banners(example defined as crawler.models.Tag.relevancy with 'banners' name in fixture)
+
+
+
+Testing
+=======
+python manage.py test
+
+
+
+Task description
+================
 The goal of this test is to create web monitoring system based on Django
 infrastructure.
 

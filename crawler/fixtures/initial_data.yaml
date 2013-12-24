@@ -1,0 +1,12 @@
+- fields: {name: programming, relevancy: 0, updated: !!timestamp '2013-12-24 16:02:14.487859+00:00',
+    words: 'python,programming'}
+  model: crawler.tag
+  pk: 3
+- fields: {name: banners, relevancy: 3, updated: !!timestamp '2013-12-24 17:21:11.149483+00:00',
+    words: ''}
+  model: crawler.tag
+  pk: 4
+- fields: {name: torrents, relevancy: 0, updated: !!timestamp '2013-12-24 17:21:27.337629+00:00',
+    words: 'torrent,tracker'}
+  model: crawler.tag
+  pk: 5

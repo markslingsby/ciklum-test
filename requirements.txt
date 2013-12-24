@@ -1,6 +1,4 @@
 django
-flower
-celery[redis]
 south
 beautifulsoup4
 django-celery
